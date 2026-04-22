@@ -943,6 +943,98 @@ function copyRoomNum() {
   setTimeout(() => { btn.innerHTML = originalHTML; }, 2000);
 }
 </script>
+ <style>
+    /* 基础样式重置 */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+    body {
+        min-height: 100vh;
+        background: url('') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        font-family: Arial, "Microsoft Yahei", sans-serif;
+    }
+
+    /* 右上角链接容器 */
+    .top-links {
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 40%;
+    }
+
+    /* 右下角客服链接 - 已修改为固定定位并垂直居中 */
+    .bottom-link {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        animation: float 2s ease-in-out infinite;
+        z-index: 1000; /* 确保图标在所有元素上方 */
+    }
+
+    /* 图片链接通用样式 */
+    .image-link {
+        display: block;
+        transition: all 0.3s ease;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    }
+
+    .image-link img {
+        width: 150px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* 悬停效果 */
+    .image-link:hover {
+        transform: scale(1.1); /* 修正缩放值，避免过大 */
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+    }
+
+    /* 浮动动画 */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(-50%) translateY(0);
+        }
+        50% {
+            transform: translateY(-50%) translateY(-10px);
+        }
+    }
+
+    /* 手机端适配 */
+    @media (max-width: 768px) {
+        .top-links {
+            gap: 10px;
+            max-width: 60%;
+        }
+        .bottom-link {
+            right: 10px;
+        }
+        .bottom-link img {
+            width: 100px !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .top-links {
+            gap: 20px;
+        }
+    }
+</style>
+   
+
+    <!-- 右下角客服链接 -->
+    <a href="" class="image-link bottom-link" target="_blank">
+            <img src="https://dingsheng28.com/img/2.png" alt="在线客服！" style="width: 150px;">
+        </a>
 </body>
 </html>
