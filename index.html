@@ -142,20 +142,30 @@ header {
 
 /* 公告栏 */
 .notice-card {
-  background: #0d1117; border-radius: var(--radius); padding: 25px;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.15), var(--shadow);
-  border: 1px solid #30363d;
+  background: linear-gradient(145deg, #f0f2f5 0%, #e4e7ec 50%, #f5f7fa 100%);
+  border-radius: var(--radius); padding: 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255,255,255,0.6);
+  border: 1px solid rgba(200, 200, 200, 0.3);
   overflow: hidden;
+  position: relative;
+}
+.notice-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(26, 35, 126, 0.03) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(255, 171, 0, 0.03) 0%, transparent 50%);
+  pointer-events: none;
 }
 .notice-header {
   display: flex; align-items: center; gap: 8px;
   margin-bottom: 15px; padding-bottom: 12px;
-  border-bottom: 1px solid #30363d;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.4);
+  position: relative; z-index: 1;
 }
 .notice-title {
   font-size: 20px; font-weight: 700;
-  color: #ff3b3b;
-  text-shadow: 0 0 10px rgba(255, 59, 59, 0.6), 0 0 25px rgba(255, 0, 0, 0.3);
+  color: #c62828;
+  text-shadow: 0 0 8px rgba(198, 40, 40, 0.3);
   letter-spacing: 2px;
 }
 .notice-body {
@@ -163,13 +173,14 @@ header {
 }
 .notice-scroll {
   animation: scrollUp 15s linear infinite;
+  position: relative; z-index: 1;
 }
 .notice-scroll:hover {
   animation-play-state: paused;
 }
 .notice-scroll p {
-  padding: 12px 0; font-size: 18px; color: #ffffff;
-  line-height: 1.7; border-bottom: 1px dashed #30363d;
+  padding: 12px 0; font-size: 18px; color: #333;
+  line-height: 1.7; border-bottom: 1px dashed rgba(150, 150, 150, 0.3);
   font-weight: 500;
 }
 .notice-scroll p:last-child { border-bottom: none; }
@@ -445,33 +456,38 @@ footer {
           <span class="keyword-tag">名爵mj98vip正版安装</span>
           <span class="keyword-tag">mj98vip赛车</span>
         </div>
-        <div class="hero-actions">
-          <a class="btn-primary" href="https://www.mj98gw.com/" target="_blank" rel="noopener noreferrer">
-            <span>🤖</span> 安卓下载
-          </a>
-          <a class="btn-secondary" href="https://www.mj98gw.com/" target="_blank" rel="noopener noreferrer">
-            <span>🍎</span> 苹果下载
-          </a>
+        <div class="hero-actions" style="flex-direction:column;gap:12px;">
+          <div style="display:flex;gap:15px;width:100%;">
+            <a class="btn-primary" href="https://www.mj98gw.com/" target="_blank" rel="noopener noreferrer" style="flex:1;justify-content:center;">
+              <span>🤖</span> 安卓下载
+            </a>
+            <a class="btn-secondary" href="https://www.mj98gw.com/" target="_blank" rel="noopener noreferrer" style="flex:1;justify-content:center;">
+              <span>🍎</span> 苹果下载
+            </a>
+          </div>
+          <button class="btn-secondary" id="roomBtn" onclick="copyRoomNum()" style="width:100%;justify-content:center;">
+            <span>🔑</span> 房间号：751653
+          </button>
         </div>
       </div>
       <div class="notice-card">
         <div class="notice-header">
-          <div class="notice-title">📢 黑房榜（玩家投稿举报）</div>
+          <div class="notice-title">📢 黑房榜</div>
         </div>
         <div class="notice-body">
           <div class="notice-scroll" id="noticeScroll">
             <p>🔥 在此栏目出现的房间号均由玩家举报！</p>
-            <p>房间号名爵：🏎️ 898884（黑房）</p>
-            <p>房间号名爵：🏎️ 932625（黑房）</p>
-<p>房间号名爵：🏎️ 080530（黑房）</p>
-<p>房间号名爵：🏎️ 177867（黑房）</p>
-<p>房间号名爵：🏎️ 100000（黑房）</p>
-<p>房间号名爵：🏎️ 307718（黑房）</p>
-<p>房间号名爵：🏎️ 810909（黑房）</p>
-<p>房间号名爵：🏎️ 481999（黑房）</p>
-<p>房间号名爵：🏎️ 860729（黑房）</p>
-<p>房间号名爵：🏎️ 128146（黑房）</p>
-<p>房间号名爵：🏎️ 050996（黑房）</p>
+            <p>名爵房间号：🏎️ 898884（黑房）</p>
+            <p>名爵房间号：🏎️ 932625（黑房）</p>
+<p>名爵房间号：🏎️ 080530（黑房）</p>
+<p>名爵房间号：🏎️ 177867（黑房）</p>
+<p>名爵房间号：🏎️ 100000（黑房）</p>
+<p>名爵房间号：🏎️ 307718（黑房）</p>
+<p>名爵房间号：🏎️ 810909（黑房）</p>
+<p>名爵房间号：🏎️ 481999（黑房）</p>
+<p>名爵房间号：🏎️ 860729（黑房）</p>
+<p>名爵房间号：🏎️ 128146（黑房）</p>
+<p>名爵房间号：🏎️ 050996（黑房）</p>
             <p>⭐ 守护自己的钱包，请勿到黑房中娱乐。</p>
           </div>
         </div>
@@ -911,6 +927,21 @@ document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
     setTimeout(() => { this.style.transform = ''; }, 150);
   });
 });
+
+// 复制房间号
+function copyRoomNum() {
+  const roomNum = '751653';
+  const textArea = document.createElement('textarea');
+  textArea.value = roomNum;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textArea);
+  const btn = document.getElementById('roomBtn');
+  const originalHTML = btn.innerHTML;
+  btn.innerHTML = '<span>✅</span> 已复制';
+  setTimeout(() => { btn.innerHTML = originalHTML; }, 2000);
+}
 </script>
 
 </body>
