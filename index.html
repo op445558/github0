@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>名爵mj989com官方 | 正版安装下载 | 赛车应用</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=1200, user-scalable=yes">
 <meta name="description" content="名爵mj989com官方提供名爵app正版安装下载，体验高品质的mj989com赛车。访问名爵mj989com官网获取最新版本，享受安全稳定的游戏体验。">
 <meta name="keywords" content="名爵app,名爵mj989com,名爵mj989com官网,mj989com名爵下载,名爵mj989com正版安装,mj989com赛车">
 <meta name="robots" content="index, follow">
@@ -50,100 +50,176 @@ header {
   position: relative;
   padding: 15px 0;
 }
-.logo { display: flex; align-items: center; gap: 12px; }
-.logo-icon {
-  width: 40px; height: 40px; border-radius: 10px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  display: flex; align-items: center; justify-content: center;
-  color: white; font-weight: bold; font-size: 20px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.logo-text h1 { font-size: 20px; color: var(--primary-dark); }
-.logo-text p { font-size: 12px; color: var(--text-muted); }
-.nav-links { display: flex; gap: 25px; }
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+.logo-text h1 { font-size: 24px; color: var(--primary-dark); }
+.logo-text p { font-size: 14px; color: var(--text-muted); }
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
 .nav-links a {
-  font-size: 15px; font-weight: 500; color: var(--text-main);
-  transition: var(--transition); position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-main);
+  transition: var(--transition);
+  position: relative;
 }
 .nav-links a:hover { color: var(--primary); }
 .nav-links a::after {
-  content: ''; position: absolute; bottom: -5px; left: 0;
-  width: 0; height: 2px; background: var(--primary); transition: var(--transition);
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: var(--transition);
 }
 .nav-links a:hover::after { width: 100%; }
 .nav-cta {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
-  color: white; border: none; padding: 10px 20px;
-  border-radius: 20px; font-size: 14px; font-weight: 500;
-  cursor: pointer; transition: var(--transition); box-shadow: var(--shadow);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
 }
-.nav-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 20px rgba(26, 35, 126, 0.3);
+.nav-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 20px rgba(26, 35, 126, 0.3); }
+.mobile-toggle { display: none; }
+.nav-panel {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
-.mobile-toggle {
-  display: none; background: none; border: none;
-  font-size: 20px; cursor: pointer; color: var(--text-main);
-}
-.nav-panel { display: flex; align-items: center; gap: 25px; }
 
 /* 英雄区块 */
 .hero {
   padding: 80px 0 50px;
   background: linear-gradient(135deg, #f5f7ff 0%, #e8edff 100%);
-  position: relative; overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .hero::before {
-  content: ''; position: absolute; top: -50%; right: -10%;
-  width: 500px; height: 500px; border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
   background: linear-gradient(135deg, rgba(26, 35, 126, 0.05) 0%, rgba(255, 171, 0, 0.05) 100%);
   z-index: 0;
 }
 .hero-container {
-  display: grid; grid-template-columns: 1.5fr 1fr;
-  gap: 40px; align-items: center; position: relative; z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .hero-content h1 {
-  font-size: 42px; line-height: 1.3; margin-bottom: 20px; color: var(--primary-dark);
+  font-size: 65px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: var(--primary-dark);
 }
 .hero-content h1 span {
   background: linear-gradient(135deg, var(--primary), var(--accent));
-  -webkit-background-clip: text; background-clip: text; color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .hero-content p {
-  font-size: 18px; color: var(--text-muted); margin-bottom: 30px; max-width: 600px;
+  font-size: 29px;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  max-width: 100%;
 }
-.hero-keywords { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
+.hero-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
 .keyword-tag {
-  background: white; border: 1px solid var(--border);
-  padding: 8px 16px; border-radius: 20px; font-size: 14px;
-  color: var(--text-main); transition: var(--transition);
+  background: white;
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 22px;
+  color: var(--text-main);
+  transition: var(--transition);
 }
-.keyword-tag:hover {
-  border-color: var(--primary); color: var(--primary); box-shadow: var(--shadow);
+.keyword-tag:hover { border-color: var(--primary); color: var(--primary); box-shadow: var(--shadow); }
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  width: 100%;
 }
-.hero-actions { display: flex; gap: 15px; }
+.hero-actions .btn-primary,
+.hero-actions .btn-secondary {
+  flex: 1;
+  justify-content: center;
+  font-size: 22px;
+}
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
-  color: white; border: none; padding: 14px 28px; border-radius: 8px;
-  font-weight: 500; cursor: pointer; transition: var(--transition);
-  box-shadow: var(--shadow); display: flex; align-items: center; gap: 8px;
+  color: white;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 8px;
+  font-size: 29px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 20px rgba(26, 35, 126, 0.3);
-}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 20px rgba(26, 35, 126, 0.3); }
 .btn-secondary {
-  background: white; color: var(--primary); border: 1px solid var(--primary);
-  padding: 14px 28px; border-radius: 8px; font-weight: 500;
-  cursor: pointer; transition: var(--transition);
-  display: flex; align-items: center; gap: 8px;
+  background: white;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 18px 36px;
+  border-radius: 8px;
+  font-size: 29px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .btn-secondary:hover { background: var(--primary); color: white; }
 
 /* 公告栏 */
 .notice-card {
   background: linear-gradient(145deg, #f0f2f5 0%, #e4e7ec 50%, #f5f7fa 100%);
-  border-radius: var(--radius); padding: 25px;
+  border-radius: var(--radius);
+  padding: 25px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255,255,255,0.6);
   border: 1px solid rgba(200, 200, 200, 0.3);
   overflow: hidden;
@@ -151,37 +227,48 @@ header {
 }
 .notice-card::before {
   content: '';
-  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(26, 35, 126, 0.03) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(255, 171, 0, 0.03) 0%, transparent 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(26, 35, 126, 0.03) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 171, 0, 0.03) 0%, transparent 50%);
   pointer-events: none;
 }
 .notice-header {
-  display: flex; align-items: center; gap: 8px;
-  margin-bottom: 15px; padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba(200, 200, 200, 0.4);
-  position: relative; z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .notice-title {
-  font-size: 20px; font-weight: 700;
+  font-size: 34px;
+  font-weight: 700;
   color: #c62828;
   text-shadow: 0 0 8px rgba(198, 40, 40, 0.3);
   letter-spacing: 2px;
+  text-align: center;
 }
-.notice-body {
-  height: 260px; overflow: hidden; position: relative;
-}
+.notice-body { height: 364px; overflow: hidden; position: relative; }
 .notice-scroll {
   animation: scrollUp 15s linear infinite;
-  position: relative; z-index: 1;
+  position: relative;
+  z-index: 1;
 }
-.notice-scroll:hover {
-  animation-play-state: paused;
-}
+.notice-scroll:hover { animation-play-state: paused; }
 .notice-scroll p {
-  padding: 12px 0; font-size: 18px; color: #333;
-  line-height: 1.7; border-bottom: 1px dashed rgba(150, 150, 150, 0.3);
+  padding: 12px 0;
+  font-size: 37px;
+  color: #333;
+  line-height: 1.7;
+  border-bottom: 1px dashed rgba(150, 150, 150, 0.3);
   font-weight: 500;
+  text-align: center;
 }
 .notice-scroll p:last-child { border-bottom: none; }
 .report-btn {
@@ -193,7 +280,7 @@ header {
   color: #fff;
   text-align: center;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 27px;
   font-weight: 600;
   transition: var(--transition);
   box-shadow: 0 0 15px rgba(220, 38, 38, 0.4);
@@ -212,51 +299,71 @@ header {
 section { padding: 80px 0; }
 .section-header { text-align: center; margin-bottom: 50px; }
 .section-eyebrow {
-  font-size: 14px; color: var(--primary);
-  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;
+  font-size: 17px;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
-h2.section-title { font-size: 36px; color: var(--primary-dark); margin-bottom: 20px; }
+h2.section-title { font-size: 43px; color: var(--primary-dark); margin-bottom: 20px; }
 .section-subtitle {
-  font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto;
+  font-size: 22px;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* 内容区块 */
 .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .card {
-  background: white; border-radius: var(--radius); padding: 30px;
-  box-shadow: var(--shadow); border: 1px solid var(--border); transition: var(--transition);
+  background: white;
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: var(--transition);
 }
 .card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
-.card h3 { font-size: 22px; color: var(--primary-dark); margin-bottom: 15px; }
+.card h3 { font-size: 26px; color: var(--primary-dark); margin-bottom: 15px; }
 .card p { color: var(--text-muted); margin-bottom: 15px; line-height: 1.7; }
 .card ul { margin-left: 20px; margin-bottom: 15px; }
 .card li { margin-bottom: 8px; color: var(--text-muted); }
 .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
-.tag {
-  background: var(--bg-light); color: var(--primary);
-  padding: 6px 12px; border-radius: 20px; font-size: 12px;
-}
+.tag { background: var(--bg-light); color: var(--primary); padding: 6px 12px; border-radius: 20px; font-size: 14px; }
 
 /* 特色服务 */
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
 .feature-item {
-  background: white; border-radius: var(--radius); padding: 30px;
-  box-shadow: var(--shadow); border: 1px solid var(--border);
-  transition: var(--transition); text-align: center;
+  background: white;
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  text-align: center;
 }
-.feature-item:hover {
-  transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
+.feature-item:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
 .feature-icon {
-  width: 60px; height: 60px; border-radius: 50%;
-  background: var(--bg-light); display: flex; align-items: center; justify-content: center;
-  font-size: 24px; color: var(--primary); margin: 0 auto 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+  color: var(--primary);
+  margin: 0 auto 20px;
 }
-.feature-item h3 { font-size: 20px; color: var(--primary-dark); margin-bottom: 15px; }
-.feature-item p { color: var(--text-muted); font-size: 15px; margin-bottom: 15px; line-height: 1.6; }
+.feature-item h3 { font-size: 24px; color: var(--primary-dark); margin-bottom: 15px; }
+.feature-item p { color: var(--text-muted); font-size: 18px; margin-bottom: 15px; line-height: 1.6; }
 .feature-tag {
-  background: var(--accent-light); color: #7c6300;
-  padding: 6px 12px; border-radius: 20px; font-size: 12px; display: inline-block;
+  background: var(--accent-light);
+  color: #7c6300;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
 }
 
 /* 为什么选择我们 */
@@ -264,150 +371,222 @@ h2.section-title { font-size: 36px; color: var(--primary-dark); margin-bottom: 2
 .why-list { list-style: none; }
 .why-list li { display: flex; gap: 15px; margin-bottom: 25px; }
 .why-bullet {
-  width: 28px; height: 28px; border-radius: 50%;
-  background: var(--primary); color: white;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 14px; flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
 }
-.why-content h4 { font-size: 18px; color: var(--primary-dark); margin-bottom: 8px; }
-.why-content p { color: var(--text-muted); font-size: 15px; line-height: 1.6; }
+.why-content h4 { font-size: 22px; color: var(--primary-dark); margin-bottom: 8px; }
+.why-content p { color: var(--text-muted); font-size: 18px; line-height: 1.6; }
 .highlight-card {
   background: linear-gradient(135deg, #fff8e1, #ffecb3);
-  border-radius: var(--radius); padding: 30px; border: 1px solid #ffd54f;
+  border-radius: var(--radius);
+  padding: 30px;
+  border: 1px solid #ffd54f;
 }
-.highlight-card h3 { font-size: 22px; color: #7c6300; margin-bottom: 15px; }
-.highlight-card p { color: #7c6300; font-size: 15px; line-height: 1.6; margin-bottom: 15px; }
+.highlight-card h3 { font-size: 26px; color: #7c6300; margin-bottom: 15px; }
+.highlight-card p { color: #7c6300; font-size: 18px; line-height: 1.6; margin-bottom: 15px; }
 
 /* APP下载指南 */
 .download-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.download-card h3 { font-size: 22px; color: var(--primary-dark); margin-bottom: 15px; }
+.download-card h3 { font-size: 26px; color: var(--primary-dark); margin-bottom: 15px; }
 .download-card p { color: var(--text-muted); margin-bottom: 15px; line-height: 1.7; }
 .download-card ul { margin-left: 20px; margin-bottom: 20px; }
 .download-card li { color: var(--text-muted); margin-bottom: 8px; }
 .download-buttons { display: flex; gap: 15px; margin-bottom: 15px; }
-.download-note { font-size: 13px; color: var(--text-muted); }
+.download-note { font-size: 16px; color: var(--text-muted); }
 .qr-box {
-  background: white; border-radius: var(--radius); padding: 25px;
-  text-align: center; box-shadow: var(--shadow); border: 1px solid var(--border);
+  background: white;
+  border-radius: var(--radius);
+  padding: 25px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
 }
 .qr-placeholder {
-  width: 180px; height: 180px; margin: 0 auto 15px; border-radius: 10px;
-  background: #f3f4f6; display: flex; align-items: center; justify-content: center;
-  font-size: 14px; color: var(--text-muted); border: 1px dashed var(--border);
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
 }
 
 /* 客服支持卡片 */
 .service-support-card {
-  background: white; border-radius: var(--radius); padding: 30px;
-  box-shadow: var(--shadow); text-align: center; margin-top: 20px;
+  background: white;
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  margin-top: 20px;
   border: 1px solid var(--border);
 }
-.service-support-card h3 { font-size: 22px; color: var(--primary-dark); margin-bottom: 15px; }
+.service-support-card h3 { font-size: 26px; color: var(--primary-dark); margin-bottom: 15px; }
 .service-support-main { margin-bottom: 20px; line-height: 1.6; }
-.service-support-row { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 15px; }
+.service-support-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
 .service-support-id { font-weight: 600; color: var(--primary-dark); }
 .btn-chip {
-  background: white; border: 1px solid var(--border);
-  padding: 8px 16px; border-radius: 20px; font-size: 14px;
-  cursor: pointer; transition: var(--transition);
+  background: white;
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: var(--transition);
 }
 .btn-chip:hover { border-color: var(--primary); color: var(--primary); }
 .service-support-tip {
-  font-size: 14px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6;
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 /* 玩法规则 */
 .rules-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .rules-tip {
-  background: #fff8e1; border: 1px solid #ffd54f;
-  border-radius: 8px; padding: 15px; margin-top: 15px;
+  background: #fff8e1;
+  border: 1px solid #ffd54f;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
 }
 .rules-tip strong { color: #7c6300; }
 
 /* FAQ */
 .faq-wrapper { max-width: 800px; margin: 0 auto; }
 details.faq-item {
-  background: white; border-radius: var(--radius); padding: 25px;
-  margin-bottom: 15px; box-shadow: var(--shadow); border: 1px solid var(--border);
+  background: white;
+  border-radius: var(--radius);
+  padding: 25px;
+  margin-bottom: 15px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
 }
 summary {
-  font-weight: 600; color: var(--primary-dark); cursor: pointer;
-  display: flex; justify-content: space-between; align-items: center;
+  font-weight: 600;
+  color: var(--primary-dark);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 summary::-webkit-details-marker { display: none; }
-.faq-icon { font-size: 18px; color: var(--primary); }
+.faq-icon { font-size: 22px; color: var(--primary); }
 .faq-body { margin-top: 15px; color: var(--text-muted); line-height: 1.6; }
 
 /* 联系方式 */
 .contact-card {
-  background: white; border-radius: var(--radius); padding: 30px;
-  box-shadow: var(--shadow); border: 1px solid var(--border);
+  background: white;
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
 }
 .contact-row { display: flex; gap: 30px; margin-bottom: 20px; }
 .contact-item { flex: 1; }
-.contact-label { font-size: 15px; color: var(--primary-dark); font-weight: 600; margin-bottom: 5px; }
+.contact-label {
+  font-size: 18px;
+  color: var(--primary-dark);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
 .contact-note {
-  background: #fff8e1; border: 1px solid #ffd54f;
-  border-radius: 8px; padding: 15px; color: #7c6300;
-  font-size: 14px; line-height: 1.6;
+  background: #fff8e1;
+  border: 1px solid #ffd54f;
+  border-radius: 8px;
+  padding: 15px;
+  color: #7c6300;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
 /* 页脚 */
 footer {
-  background: var(--primary-dark); color: white;
+  background: var(--primary-dark);
+  color: white;
   padding: 50px 0 20px;
 }
-.footer-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 .footer-links { display: flex; gap: 20px; }
 .footer-links a { color: #d1d5db; transition: var(--transition); }
 .footer-links a:hover { color: white; }
 .footer-bottom {
-  text-align: center; padding-top: 20px;
-  border-top: 1px solid #374151; color: #9ca3af; font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #374151;
+  color: #9ca3af;
+  font-size: 17px;
 }
 
 /* 回到顶部按钮 */
 .back-to-top {
-  position: fixed; bottom: 30px; right: 30px;
-  width: 50px; height: 50px; border-radius: 50%;
-  background: var(--primary); color: white;
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; opacity: 0; visibility: hidden;
-  transition: var(--transition); box-shadow: var(--shadow); z-index: 99;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  z-index: 99;
 }
 .back-to-top.show { opacity: 1; visibility: visible; }
 
-/* 响应式设计 */
-@media (max-width: 1024px) {
-  .feature-grid { grid-template-columns: repeat(2, 1fr); }
-}
+/* 移动端：视口缩放适配，一屏显示完整PC内容 */
 @media (max-width: 768px) {
-  .nav-links, .nav-cta { display: none; }
-  .mobile-toggle { display: block; }
-  .nav-panel { display: none; }
-  .nav-panel.open {
-    display: block; position: absolute; top: 100%; left: 0; right: 0;
-    background: #ffffff; padding: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--border);
-    border-radius: 0 0 var(--radius) var(--radius);
+  section {
+    padding: 40px 0;
   }
-  .nav-panel.open .nav-links { display: flex; flex-direction: column; gap: 15px; }
-  .nav-panel.open .nav-cta { display: block; width: 100%; margin-top: 12px; }
-  .hero-container { grid-template-columns: 1fr; }
-  .content-grid, .why-grid, .download-layout, .rules-layout { grid-template-columns: 1fr; }
-  .feature-grid { grid-template-columns: 1fr; }
-  .contact-row { flex-direction: column; gap: 15px; }
-  .hero-content h1 { font-size: 32px; }
-  h2.section-title { font-size: 28px; }
-  .info-grid { grid-template-columns: 1fr; }
-  .download-buttons { flex-direction: column; }
-  .hero-actions { flex-direction: column; }
-  .hero-actions .btn-primary, .hero-actions .btn-secondary { width: 100%; justify-content: center; }
-  .service-support-row { flex-direction: column; }
-  .footer-row { flex-direction: column; gap: 15px; text-align: center; }
-  .footer-links { justify-content: center; }
-  section { padding: 60px 0; }
+  .hero-content h1 { font-size: 38px; }
+  h2.section-title { font-size: 34px; }
+}
+
+/* 悬浮客服 */
+.bottom-link {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  animation: float 2s ease-in-out infinite;
+  z-index: 1000;
+}
+.bottom-link img { width: 150px; height: auto; border-radius: 8px; }
+.bottom-link:hover { transform: translateY(-50%) scale(1.1); }
+@keyframes float {
+  0%, 100% { transform: translateY(-50%) translateY(0); }
+  50% { transform: translateY(-50%) translateY(-10px); }
 }
 </style>
 </head>
@@ -424,7 +603,7 @@ footer {
           <p>正版安装下载 · 赛车体验</p>
         </div>
       </div>
-      <div id="navPanel" class="nav-panel">
+      <div class="nav-panel">
         <div class="nav-links">
           <a href="#intro">介绍</a>
           <a href="#services">特色功能</a>
@@ -436,12 +615,11 @@ footer {
         </div>
         <button class="nav-cta">名爵房间号：890890</button>
       </div>
-      <button class="mobile-toggle" aria-expanded="false" aria-controls="navPanel">☰</button>
     </div>
   </div>
 </header>
 
-<!-- 英雄区块 + 信息速览 -->
+<!-- 英雄区块 -->
 <section class="hero" id="top">
   <div class="container">
     <div class="hero-container">
@@ -449,46 +627,59 @@ footer {
         <h1>体验<span>名爵mj989com</span>官方，畅享高品质赛车</h1>
         <p>名爵app官方正版下载，安全稳定的mj989com赛车体验。访问名爵mj989com官网获取最新版本，享受流畅操作与丰富功能。</p>
         <div class="hero-keywords">
-<a href="https://www.mj989.com/1" class="keyword-tag" style="cursor: pointer;">名爵app</a>
-<a href="https://www.mj989.com/1" class="keyword-tag" style="cursor: pointer;">名爵mj989com</a>
-<a href="https://www.mj989.com/1" class="keyword-tag" style="cursor: pointer;">名爵mj989com官网</a>
-<a href="https://www.mj989.com/1" class="keyword-tag" style="cursor: pointer;">mj989com名爵下载</a>
-<a href="https://www.mj989.com/1" class="keyword-tag" style="cursor: pointer;">名爵mj989com正版安装</a>
-<a href="https://www.mj989.com/1" class="keyword-tag" style="cursor: pointer;">mj989com赛车</a>
-
+          <a href="https://www.mj989.com/1" class="keyword-tag">名爵app</a>
+          <a href="https://www.mj989.com/1" class="keyword-tag">名爵mj989com</a>
+          <a href="https://www.mj989.com/1" class="keyword-tag">名爵mj989com官网</a>
+          <a href="https://www.mj989.com/1" class="keyword-tag">mj989com名爵下载</a>
+          <a href="https://www.mj989.com/1" class="keyword-tag">名爵mj989com正版安装</a>
+          <a href="https://www.mj989.com/1" class="keyword-tag">mj989com赛车</a>
         </div>
-<div class="hero-actions">
-                        <a class="btn-primary" href="https://www.mj989.com/1" target="_blank" rel="noopener noreferrer">
-                            <span>⬇️</span> 立即下载名爵app
-                        </a>
-                        <button class="btn-secondary">
-                            <span>🔍</span> 名爵房间号：890890
-                        </button>
+        <div class="hero-actions">
+          <a class="btn-primary" href="https://www.mj989.com/1" target="_blank" rel="noopener noreferrer">
+            <span>⬇️</span> 立即下载名爵app
+          </a>
+          <button class="btn-secondary">
+            <span>🔍</span> 名爵房间号：890890
+          </button>
         </div>
       </div>
-      <div class="notice-card">
-        <div class="notice-header">
-          <div class="notice-title">📢 黑房榜</div>
-        </div>
-        <div class="notice-body">
-          <div class="notice-scroll" id="noticeScroll">
-            <p>🔥 在此栏目出现的房间号均由玩家举报！</p>
-            <p>名爵房间号：🏎️ 898884（黑房）</p>
-            <p>名爵房间号：🏎️ 932625（黑房）</p>
-<p>名爵房间号：🏎️ 080530（黑房）</p>
-<p>名爵房间号：🏎️ 177867（黑房）</p>
-<p>名爵房间号：🏎️ 100000（黑房）</p>
-<p>名爵房间号：🏎️ 307718（黑房）</p>
-<p>名爵房间号：🏎️ 810909（黑房）</p>
-<p>名爵房间号：🏎️ 481999（黑房）</p>
-<p>名爵房间号：🏎️ 860729（黑房）</p>
-<p>名爵房间号：🏎️ 128146（黑房）</p>
-<p>名爵房间号：🏎️ 050996（黑房）</p>
-            <p>⭐ 守护自己的钱包，请勿到黑房中娱乐。</p>
-          </div>
-        </div>
-        <a href="https://m3nolksm.jsjform.com/f/rGdKdz" target="_blank" class="report-btn">举报入口</a>
+    </div>
+    <div class="notice-card" style="margin-top:30px;">
+      <div class="notice-header">
+        <div class="notice-title">📢 黑房榜</div>
       </div>
+      <div class="notice-body">
+        <div class="notice-scroll" id="noticeScroll">
+          <p>🔥 在此栏目出现的房间号均由玩家举报！</p>
+          <p>名爵房间号：498626（星耀娱乐）（黑房）</p>
+          <p>名爵房间号：932625（天马娱乐）（黑房）</p>
+          <p>名爵房间号：810909（顶诚）（黑房）</p>
+          <p>名爵房间号：050737（保时捷）（黑房）</p>
+          <p>名爵房间号：999279（凯旋门）（黑房）</p>
+          <p>名爵房间号：777778（永利国际）（黑房）</p>
+          <p>名爵房间号：600890（皇马）（黑房）</p>
+          <p>名爵房间号：432739（大赢家）（黑房）</p>
+          <p>名爵房间号：963399（凤凰国际）（黑房）</p>
+          <p>名爵房间号：777033（财神到）（黑房）</p>
+          <p>名爵房间号：989868（金元）（黑房）</p>
+          <p>名爵房间号：307718（博亚娱乐）（黑房）</p>
+          <p>名爵房间号：177867（东方皇家）（黑房）</p>
+          <p>名爵房间号：488474（老上海）（黑房）</p>
+          <p>名爵房间号：888999（日月昇）（黑房）</p>
+          <p>名爵房间号：898884（星盛国际）（黑房）</p>
+          <p>名爵房间号：999558（大发）（黑房）</p>
+          <p>名爵房间号：456888（新葡京）（黑房）</p>
+          <p>名爵房间号：119117（博亚娱乐）（黑房）</p>
+          <p>名爵房间号：080530（云顶国际）（黑房）</p>
+          <p>名爵房间号：481999（盛源）（黑房）</p>
+          <p>名爵房间号：372000（太阳城）（黑房）</p>
+          <p>名爵房间号：888846（财神国际）（黑房）</p>
+          <p>名爵房间号：676699（银河娱乐）（黑房）</p>
+          <p>名爵房间号：949897（顺发）（黑房）</p>
+          <p>⭐ 守护自己的钱包，请勿到黑房中娱乐。</p>
+        </div>
+      </div>
+      <a href="https://m3nolksm.jsjform.com/f/rGdKdz" target="_blank" class="report-btn">举报入口</a>
     </div>
   </div>
 </section>
@@ -597,7 +788,7 @@ footer {
     </div>
     <div class="why-grid">
       <div class="card">
-        <div class="why-card-title">我们的优势</div>
+        <h3>我们的优势</h3>
         <ul class="why-list">
           <li>
             <div class="why-bullet">1</div>
@@ -850,28 +1041,12 @@ footer {
 <!-- 回到顶部按钮 -->
 <div id="backToTop" class="back-to-top">↑</div>
 
-<script>
-const mobileToggle = document.querySelector('.mobile-toggle');
-const navPanel = document.getElementById('navPanel');
-mobileToggle.addEventListener('click', function() {
-  const isOpen = navPanel.classList.toggle('open');
-  mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-});
-document.addEventListener('click', function(e) {
-  if (window.innerWidth <= 768 && navPanel.classList.contains('open')) {
-    if (!navPanel.contains(e.target) && !mobileToggle.contains(e.target)) {
-      navPanel.classList.remove('open');
-      mobileToggle.setAttribute('aria-expanded', 'false');
-    }
-  }
-});
-window.addEventListener('resize', function() {
-  if (window.innerWidth > 768 && navPanel.classList.contains('open')) {
-    navPanel.classList.remove('open');
-    mobileToggle.setAttribute('aria-expanded', 'false');
-  }
-});
+<!-- 悬浮客服 -->
+<a href="https://tawk.to/chat/69e8cb1cd2ff3c1c34df7703/1jmqliqjs" class="image-link bottom-link" target="_blank">
+  <img src="https://dingsheng28.com/img/2.png" alt="在线客服！">
+</a>
 
+<script>
 // 页脚年份
 document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -881,21 +1056,15 @@ window.addEventListener('scroll', function() {
   if (window.pageYOffset > 300) { backToTop.classList.add('show'); }
   else { backToTop.classList.remove('show'); }
 });
-backToTop.addEventListener('click', function() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
 // 复制客服号码
 document.getElementById('copyCustomerId').addEventListener('click', function() {
   const customerId = document.getElementById('customerId').textContent;
   const textArea = document.createElement('textarea');
-  textArea.value = customerId;
-  document.body.appendChild(textArea);
-  textArea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textArea);
-  const originalText = this.textContent;
-  this.textContent = '已复制';
+  textArea.value = customerId; document.body.appendChild(textArea);
+  textArea.select(); document.execCommand('copy'); document.body.removeChild(textArea);
+  const originalText = this.textContent; this.textContent = '已复制';
   setTimeout(() => { this.textContent = originalText; }, 2000);
 });
 
@@ -906,13 +1075,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetId = this.getAttribute('href');
     if (targetId === '#') return;
     const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-      window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
-      if (window.innerWidth <= 768) {
-        navPanel.classList.remove('open');
-        mobileToggle.setAttribute('aria-expanded', 'false');
-      }
-    }
+    if (targetElement) { window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' }); }
   });
 });
 
@@ -923,100 +1086,7 @@ document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
     setTimeout(() => { this.style.transform = ''; }, 150);
   });
 });
-
-// 复制房间号
-function copyRoomNum() {
-  const roomNum = '890890';
-  const textArea = document.createElement('textarea');
-  textArea.value = roomNum;
-  document.body.appendChild(textArea);
-  textArea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textArea);
-  const btn = document.getElementById('roomBtn');
-  const originalHTML = btn.innerHTML;
-  btn.innerHTML = '<span>✅</span> 已复制';
-  setTimeout(() => { btn.innerHTML = originalHTML; }, 2000);
-}
 </script>
- <style>
 
-
-    /* 右上角链接容器 */
-    .top-links {
-        position: absolute;
-        top: 3%;
-        right: 3%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        max-width: 40%;
-    }
-
-    /* 右下角客服链接 - 已修改为固定定位并垂直居中 */
-    .bottom-link {
-        position: fixed;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        animation: float 2s ease-in-out infinite;
-        z-index: 1000; /* 确保图标在所有元素上方 */
-    }
-
-    /* 图片链接通用样式 */
-    .image-link {
-        display: block;
-        transition: all 0.3s ease;
-        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-    }
-
-    .image-link img {
-        width: 150px;
-        height: auto;
-        border-radius: 8px;
-    }
-
-    /* 悬停效果 */
-    .image-link:hover {
-        transform: scale(1.1); /* 修正缩放值，避免过大 */
-        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
-    }
-
-    /* 浮动动画 */
-    @keyframes float {
-        0%, 100% {
-            transform: translateY(-50%) translateY(0);
-        }
-        50% {
-            transform: translateY(-50%) translateY(-10px);
-        }
-    }
-
-    /* 手机端适配 */
-    @media (max-width: 768px) {
-        .top-links {
-            gap: 10px;
-            max-width: 60%;
-        }
-        .bottom-link {
-            right: 10px;
-        }
-        .bottom-link img {
-            width: 100px !important;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        .top-links {
-            gap: 20px;
-        }
-    }
-</style>
-   
-
-    <!-- 右下角客服链接 -->
-    <a href="https://tawk.to/chat/69e8cb1cd2ff3c1c34df7703/1jmqliqjs" class="image-link bottom-link" target="_blank">
-            <img src="https://dingsheng28.com/img/2.png" alt="在线客服！" style="width: 150px;">
-        </a>
 </body>
 </html>
